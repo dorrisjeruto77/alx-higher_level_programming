@@ -1,6 +1,6 @@
 /*
  * File: 103-python.c
- * Auth: Type Your Name Here
+ * Auth: Dorris Jeruto
  */
 
 #include <Python.h>
