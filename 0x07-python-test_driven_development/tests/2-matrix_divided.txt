@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+
+def matrix_divided(matrix, div):
+    """
+    Divides all elements of a matrix by a divisor.
+    [Include the matrix_divided function implementation here]
+    """
+
+def run_tests():
+    """
+    Runs a series of tests on the matrix_divided function.
+    Each test is documented with a comment explaining its purpose.
+    Prints the result of each test case.
+    """
+    tests_passed = 0
+    total_tests = 10
+
+    # Test 1: Regular Matrix Division
+    # This test checks if the function correctly divides a regular matrix.
+    try:
+        assert matrix_divided([[1
