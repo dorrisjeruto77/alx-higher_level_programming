@@ -12,9 +12,9 @@ def matrix_divided(matrix, div):
         list of lists of float: New matrix with each element divided.
 
     Raises:
-        TypeError: If matrix is not a list of lists of integers/floats, or
-                   if rows in the matrix are of different sizes, or
-                   if div is not a number.
+        TypeError: If matrix is not a list of lists of integers/floats,
+                   if rows in the matrix are of different sizes,
+                   or if div is not a number.
         ZeroDivisionError: If div is zero.
     """
     if not all(isinstance(row, list) and all(isinstance(elem, (int, float)) for elem in row) for row in matrix):
