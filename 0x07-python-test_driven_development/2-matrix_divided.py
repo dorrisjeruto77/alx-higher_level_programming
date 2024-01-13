@@ -17,6 +17,12 @@ def matrix_divided(matrix, div):
                    or if div is not a number.
         ZeroDivisionError: If div is zero.
     """
+
+    # Check for division by zero first
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+
+    # Then, proceed with other checks and operations
     if not all(isinstance(row, list) and all(isinstance(elem, (int, float)) for elem in row) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
@@ -27,7 +33,5 @@ def matrix_divided(matrix, div):
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
 
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
-
+    # Perform the division
     return [[round(elem / div, 2) for elem in row] for row in matrix]
