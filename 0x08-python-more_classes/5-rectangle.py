@@ -13,7 +13,7 @@ class Rectangle:
     def __exit__(self, exc_type, exc_val, exc_tb):
         print("Bye rectangle...")
 
-# Correct usage in a loop with context manager
-for i in range(10):
-    with Rectangle(2, 4) as m1:
-        pass  # This pass statement is just a placeholder
+# Usage Example
+with Rectangle(2, 4) as myrectangle:
+    # Do something with myrectangle
+    pass  # This pass statement is just a placeholder
