@@ -5,6 +5,7 @@ Module documentation: LockedClass module.
 This module provides the LockedClass class which restricts attribute creation.
 """
 
+
 class LockedClass:
     """
     A class that only allows creating an attribute named 'first_name'.
