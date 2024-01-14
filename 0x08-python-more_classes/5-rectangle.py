@@ -7,13 +7,11 @@ class Rectangle:
 
     # [rest of the class definition with properties and methods]
 
-    def __enter__(self):
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __del__(self):
         print("Bye rectangle...")
 
-# Usage Example
-with Rectangle(2, 4) as myrectangle:
-    # Do something with myrectangle
-    pass  # This pass statement is just a placeholder
+
+# Ensure two blank lines after class definition
+for i in range(10):
+    m1 = Rectangle(2, 4)
+    del m1  # Explicitly delete the object to trigger __del__
