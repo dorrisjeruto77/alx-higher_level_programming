@@ -1,1 +1,11 @@
-Small Integers (-5 to 256 in CPython)
+# script to demonstrate integer object creation in python 
+
+# First line of the script
+a = 1024 # a number outside the range of -5 to 256, so a new int object
+
+b = 1024 # Another new int object is created, even though it's the same
+
+# Printing the IDS to show whether they are the same object or different
+
+print(f"ID of a: {id(a)}")
+print(f"ID of b: {id(b)}") 
