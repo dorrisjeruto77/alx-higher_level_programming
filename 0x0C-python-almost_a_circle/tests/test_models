@@ -1,0 +1,20 @@
+# tests/test_models/test_base.py
+import unittest
+from models.base import Base
+
+class TestBase(unittest.TestCase):
+
+    def test_id_auto_increment(self):
+        """Test for auto-increment of id."""
+        base1 = Base()
+        base2 = Base()
+        self.assertTrue(base2.id > base1.id)
+
+    def test_some_method(self):
+        """Test some_method for negative input."""
+        base = Base()
+        with self.assertRaises(ValueError):
+            base.some_method(-1)
+
+if __name__ == '__main__':
+    unittest.main()
