@@ -11,11 +11,11 @@ def lookup(obj):
     list: A list of attribute and method names.
     """
     attributes_and_methods = []
-    
+
     for name in dir(obj):
         if callable(getattr(obj, name)) or not name.startswith("__"):
             attributes_and_methods.append(name)
-    
+
     return attributes_and_methods
 
 if __name__ == "__main__":
