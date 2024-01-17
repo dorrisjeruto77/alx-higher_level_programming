@@ -1,1 +1,11 @@
-Large Integers (Outside -5 to 256 in CPython)
+# A script to demonstrate integer object creation in Python
+
+# First line of the script (103-line1.txt)
+a = 1024  # A number outside the range of -5 to 256, so a new int object is created
+
+# Second line of the script (103-line2.txt)
+b = 1024  # Another new int object is created, even though it's the same value as 'a'
+
+# Printing the IDs to show whether they are the same object or different
+print(f"ID of a: {id(a)}")
+print(f"ID of b: {id(b)}")
