@@ -1,2 +1,2 @@
---Database creation on my sql server
-mysql -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" -e "CREATE DATABASE IF NOT EXISTS $hbtn_0c_0;"
+-- Creates the database hbtn_0c_0 in my MySQL server.
+CREATE DATABASE IF NOT EXISTS `hbtn_0c_0`;
